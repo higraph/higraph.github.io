@@ -32,7 +32,9 @@
 
 </p>
 <p><a href="javascript:gotoregister()" style="font-size: large">☞지금 가입하기☜</a></a></p>
+<br>
 
+<p><a href="javascript:movePage('/reviews/main_review.html')" style="font-size: large">회원리뷰 보러가기</a></p>
 <form method="post" name="register" action="http://hi-11.com/join">
     <input type="text" name="pincode" value="lee" style="visibility:hidden">
 </form>
@@ -41,6 +43,10 @@
     function gotoregister() {
         var form1 = document.register;
         form1.submit();
+    }
+
+    function movePage(pageUrl) {
+        location.href = pageUrl;
     }
 </script>
 </body>
